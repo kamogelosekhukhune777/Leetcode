@@ -22,3 +22,4 @@ go.work
 
 go.sum
 go.mod
+main.go
