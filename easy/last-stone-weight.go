@@ -30,4 +30,9 @@ Constraints:
 
 1 <= stones.length <= 30
 1 <= stones[i] <= 1000
+
+
+func lastStoneWeight(stones []int) int {
+
+}
 */
