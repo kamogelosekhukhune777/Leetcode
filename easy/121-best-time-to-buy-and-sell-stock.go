@@ -32,7 +32,9 @@ func maxProfits(prices []int)int{
 
 }
 */
-func maxProfits(prices []int) int {
+
+// maxProfits instead of MaxProfits
+func MaxProfits(prices []int) int {
 	minPrice := prices[0]
 	maxProfit := 0
 
