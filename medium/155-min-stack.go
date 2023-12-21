@@ -47,25 +47,25 @@ func Constructor() MinStack {
 	return MinStack{}
 }
 
-func (this *MinStack) Push(val int) {
-	this.stack = append(this.stack, val)
-	if len(this.minStack) == 0 || val <= this.minStack[len(this.minStack)-1] {
-		this.minStack = append(this.minStack, val)
+func (m *MinStack) Push(val int) {
+	m.stack = append(m.stack, val)
+	if len(m.minStack) == 0 || val <= m.minStack[len(m.minStack)-1] {
+		m.minStack = append(m.minStack, val)
 	}
 }
 
-func (this *MinStack) Pop() {
-	if this.stack[len(this.stack)-1] == this.minStack[len(this.minStack)-1] {
-		this.minStack = this.minStack[:len(this.minStack)-1]
+func (m *MinStack) Pop() {
+	if m.stack[len(m.stack)-1] == m.minStack[len(m.minStack)-1] {
+		m.minStack = m.minStack[:len(m.minStack)-1]
 	}
-	this.stack = this.stack[:len(this.stack)-1]
+	m.stack = m.stack[:len(m.stack)-1]
 }
 
-func (this *MinStack) Top() int {
-	return this.stack[len(this.stack)-1]
+func (m *MinStack) Top() int {
+	return m.stack[len(m.stack)-1]
 
 }
 
-func (this *MinStack) GetMin() int {
-	return this.minStack[len(this.minStack)-1]
+func (m *MinStack) GetMin() int {
+	return m.minStack[len(m.minStack)-1]
 }
