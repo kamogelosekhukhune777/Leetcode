@@ -45,7 +45,7 @@ func (h *MaxHeap) Pop() interface{} {
 	return x
 }
 
-func findKthLargest(nums []int, k int) int {
+func FindKthLargest(nums []int, k int) int {
 	h := &MaxHeap{}
 	heap.Init(h)
 
@@ -61,7 +61,7 @@ func findKthLargest(nums []int, k int) int {
 
 //second solution
 /*
-func findKthLargest(nums []int, k int) int {
+func FindKthLargest(nums []int, k int) int {
 	return quickSelect(nums, 0, len(nums)-1, len(nums)-k)
 }
 
