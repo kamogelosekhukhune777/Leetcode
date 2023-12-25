@@ -22,7 +22,7 @@ Constraits:
 -  s consists of only lowercase English letters
 */
 
-func firstUniqueChar(s string) int {
+func FirstUniqueChar(s string) int {
 	charCount := make(map[byte]int)
 
 	for i := 0; i < len(s); i++ {
